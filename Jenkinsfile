@@ -6,5 +6,11 @@ pipeline{
                                 echo "Buildmyweb"
                         }                     
                 }
+        stages{
+                stage('run sample'){
+                        steps{
+                                bat 'sample.py'
+                        }
+                }
         }
 }
